@@ -1,0 +1,13 @@
+OBJS = Students.o Driver.o
+CPPFLAGS = -Wall -std=c++11
+CC = g++
+
+studs: $(OBJS)
+	$(CC) -o studs $(OBJS)
+Driver.o: Driver.cpp
+	$(CC) $(CPPFLAGS) -c Driver.cpp
+Students.o: Students.cpp Students.h
+	$(CC) $(CPPFLAGS) -c Students.cpp
+
+clean: 
+	$(RM) studs $(OBJS)

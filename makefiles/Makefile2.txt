@@ -1,0 +1,9 @@
+studs: Driver.o Students.o
+	g++ -o studs Driver.o Students.o
+Driver.o: Driver.cpp
+	g++ -Wall -std=c++11 -c Driver.cpp
+Students.o: Students.cpp Students.h
+	g++ -Wall -std=c++11 -c Students.cpp
+
+clean: 
+	$(RM) studs Students.o Driver.o
