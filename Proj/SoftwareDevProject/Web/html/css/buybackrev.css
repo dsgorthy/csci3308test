@@ -1,0 +1,21 @@
+.centerme{
+        text-align: center;
+}
+
+.hide{
+        display: none;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+.sectionTop{
+	background: gray;
+	margin: 0 auto;
+}
+
